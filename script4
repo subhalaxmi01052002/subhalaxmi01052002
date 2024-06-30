@@ -1,0 +1,11 @@
+function calculate() {
+    const num1 = parseFloat(Document.getElementById('num1').value);
+    const num2 = parseFloat(Document.getElementById('num2').value);
+    const result = num1 + num2;
+
+    if (isNaN(result)) {
+        Document.getElementById('result').textContent = 'Please enter valid numbers.';
+    } else {
+        Document.getElementById('result').textContent = Result: ${result};
+    }
+}
